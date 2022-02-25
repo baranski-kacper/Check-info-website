@@ -10,7 +10,7 @@ class CheckInfoWebsite:
 
     def run_check(self):
         while True:
-            time.sleep(60)
+            time.sleep(10)
             get_info = GetInfo(self.www)
 
             if get_info.check_connection():
