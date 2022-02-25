@@ -22,7 +22,7 @@ class GetInfo:
 
     def get_status(self):
         for var, var2 in enumerate(self.html_dic):
-             if 'czy_dostepny&quot;:true' in var2:
+            if 'czy_dostepny&quot;:true' in var2:
                 return True
         # for var, var2 in enumerate(self.html_dic):
         #     if var2 == ':akcyza_insert':
@@ -41,8 +41,3 @@ class GetInfo:
         #         # print(var, var2, self.html_dic[var + 2])
         #         if self.html_dic[var + 2] != '"0"':
         #             return True
-
-
-getinfo = GetInfo('https://sklep.pgg.pl')
-getinfo.check_connection()
-getinfo.get_status()
